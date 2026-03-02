@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Case Analysis Result</title>
+</head>
+<body>
+    <h2>Key Investigation Highlights</h2>
+
+    <ul>
+        {% for h in highlights %}
+            <li>{{ h }}</li>
+        {% endfor %}
+    </ul>
+
+    <h3>High Priority Evidence</h3>
+    {{ tables|safe }}
+
+    <br>
+    <a href="/">Upload Another Case</a>
+</body>
+</html>
